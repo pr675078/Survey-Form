@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitQuest Survey</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <h1>Exercise Track</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name-label" id="name-label">Name
+                <input type="text" placeholder=" Enter Your Name" id="name"required>
+            </label>
+            
+            <label for="email-label"id="email-label">Mail-Id
+                <input type="email"  placeholder=" Enter Your Mail-Id"id="email" required>
+            </label>
+            <label for="number-label"id="number-label">Age
+                <input type="number"  min="13" max="120" id="number"placeholder=" Enter Your Age" required>
+            </label>
+            <label for="dropdown">Gender
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+            </label>
+            <label for="dropdown">How did you hear about us?
+                <select id="dropdown">
+                    <option vaule="">(select one)</option>
+                    <option value="1">Advertisement</option>
+                    <option value="2">Friends</option>
+                    <option value="3">Forums</option>
+                </select>
+            </label>
+
+            <label>Exercise Frequency:</label>
+            <div for="radio">
+                <input type="radio" name="radio" value="1"checked> Daily
+            </div>
+            <div for="radio">
+                <input type="radio" name="radio" value="2"> 3-5 times a Week
+            </div>
+            <div for="radio">
+                <input type="radio" name="radio" value="3"> 1-2 times a Week
+            </div>
+            <div for="radio">
+                <input type="radio" name="radio" value="4"> Occasionally
+            </div>
+            <div for="radio">
+                <input type="radio" name="radio" value="5"> Rarely/Never
+            </div>
+
+            <label>What Type of Workout Do You Prefer:</label>
+      <div for="checkbox">
+        <input type="checkbox"name="checkbox" value="cardio"checked/> Cardio
+      </div>
+      <div for="checkbox">
+        <input type="checkbox"name="checkbox"value="strength training"/> Strength Training
+      </div>
+      <div for="checkbox">
+        <input type="checkbox"name="checkbox"value="yoga"/> Yoga
+      </div>
+      <div for="checkbox">
+        <input type="checkbox"name="checkbox"value="pilates"/> Pilates
+      </div>
+      <div for="checkbox">
+        <input type="checkbox"name="checkbox"value="no exercise"/> No Exercise
+      </div>
+      <label>What is Your Main Goal:</label>
+      <div for="weight loss"><input type="radio" id="weight loss"name="goal" value="weight loss" checked> Weight Loss</div>
+<div for="muscle gain"><input type="radio" name="goal" id="muscle gain"value="muscle gain"> Muscle Gain</div>
+<div for="general fitness"><input type="radio" name="goal" id="general fitness"value="general fitness"> General Fitness</div>
+<div for="stress relief"><input type="radio" name="goal" id="stress relief"value="stress relief"> Stress Relief</div>
+<div for="event training"><input type="radio" name="goal" id="event training"value="event training"> Training for an Event</div>
+
+         <label for="bio" >Exercise Bio:
+            <textarea id="bio" placeholder="Please Provide A Brief Bio Of Your Exercise Routine......." required></textarea>
+         </label> 
+         <input type="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
